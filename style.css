@@ -1,0 +1,196 @@
+body {
+  font-family: "Tektur", sans-serif;
+  background-color: #dcf2f1;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2 {
+  color: #0f1035;
+}
+
+h3,
+h4,
+h5,
+h6,
+p {
+  color: #365486;
+}
+
+.nmargin {
+  margin: 1rem;
+}
+
+.skillp {
+  clear: both;
+}
+
+.content {
+  margin-top: 2rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  margin-bottom: 2rem;
+}
+
+.footer {
+  margin-left: 2rem;
+  margin-right: 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+#navigation {
+  overflow: hidden;
+  position: fixed;
+  background-color: #365486;
+  top: 0;
+  width: 100%;
+}
+
+#navigation a {
+  float: left;
+  display: block;
+  color: #7fc7d9;
+  padding: 1rem 1rem;
+  text-decoration: none;
+}
+
+#navigation a:hover {
+  background: #7fc7d9;
+  color: #0f1035;
+}
+
+.flexcontainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+}
+.nweight {
+  font-weight: normal;
+}
+
+.ctext {
+  text-align: center;
+}
+
+.profile-picture {
+  border: #7fc7d9 solid 5px;
+  border-radius: 50%;
+}
+
+.icon-square {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 0.75rem;
+  background-color: #dcf2f1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0.5rem;
+}
+
+.fright {
+  float: right;
+}
+
+.fleft {
+  float: left;
+}
+
+#skillsetgrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-auto-rows: auto;
+  row-gap: 1rem;
+  column-gap: 5rem;
+}
+
+.project {
+  display: grid;
+  grid-template: auto / 3fr 1fr;
+  gap: 1rem;
+}
+
+.projectr {
+  display: grid;
+  grid-template: auto / 1fr 3fr;
+  gap: 1rem;
+}
+
+.back2 {
+  background-color: #7fc7d9;
+}
+
+.cardr {
+  order: -1;
+}
+
+.button {
+  background-color: #7fc7d9;
+  border-radius: 30px;
+  box-shadow: 2px 2px;
+  border: #365486 solid 2px;
+  padding: 0.5rem;
+  color: #0f1035;
+}
+
+.button2 {
+  background-color: #dcf2f1;
+  border-radius: 30px;
+  box-shadow: 2px 2px;
+  border: #365486 solid 2px;
+  padding: 0.5rem;
+  color: #0f1035;
+}
+.button:hover,
+.button2:hover {
+  background-color: #0f1035;
+  color: #7fc7d9;
+}
+
+.video {
+  border: #dcf2f1 solid 1rem;
+}
+
+.imager {
+  border: #7fc7d9 solid 1rem;
+}
+
+@media (max-width: 800px) {
+  .project {
+    grid-template: auto/ auto;
+  }
+  .projectr {
+    grid-template: auto/ auto;
+  }
+
+  .cardr {
+    order: 0;
+  }
+  .video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .image,
+  .imager {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .jtext {
+    text-align: justify;
+  }
+
+  #skillsetgrid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: 1fr;
+    column-gap: 0.5rem;
+    row-gap: 0.5rem;
+  }
+}
